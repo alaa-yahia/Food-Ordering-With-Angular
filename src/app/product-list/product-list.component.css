@@ -1,0 +1,118 @@
+main {
+  padding-top: 3.5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  grid-row-gap: 5rem;
+}
+
+@media (max-width: 935px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 735px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 535px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 335px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 150px;
+  padding: 0 0.8rem 0.8rem 0.8rem;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.item img {
+  margin-top: -3.5rem;
+  height: 130px;
+  /* TODO Remeber this proberty 👇*/
+  object-fit: contain;
+}
+
+.item-foot_desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-head_desc p {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.item-head_desc {
+  text-align: left;
+  /* TODO  iF YOU DELETE THE NEXT LINE THE ITEMS WILL BE THE SAME SIZE BUT BUTTON & PRICE WILL NOT STAY AT THE BUTTOM 
+      WHY ITEMS THE SAME SIZE? IF i ADDED TEXT TO INFO THE HEIGHT OF ALL THE ITEMS WILL INCREASE ❓
+      */
+  flex: 1;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.head_desc-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.head_desc-info {
+  font-size: 0.8rem;
+  /* TODO 
+    اللون الباهت دا سمح
+    */
+  color: #a0a0a0;
+  flex: 1;
+}
+
+.foot_desc-price {
+  font-weight: 700;
+}
+
+.item-foot_desc button {
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.btnAddRemove {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+  font-size: 0.6rem;
+  background-color: black;
+  color: white;
+}
+
+.btnAddRemove-positive,
+.btnAddRemove-negative {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+}

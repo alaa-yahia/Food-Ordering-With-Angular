@@ -1,0 +1,23 @@
+<main>
+  <div *ngFor="let item of items; let i = index" class="item">
+    <img src="{{ item.img }}" alt="{{ item.name }}" />
+
+    <div class="item-head_desc">
+      <p class="head_desc-name">{{ item.name }}</p>
+      <p class="head_desc-info">
+        <small>{{ item.info }}</small>
+      </p>
+    </div>
+
+    <div class="item-foot_desc">
+      <span class="foot_desc-price">${{ item.price }}</span>
+      <div class="btnAddRemove">
+        <div class="btnAddRemove-positive">
+          <i class="fa fa-minus" aria-hidden="true" (click)="decrement(i)"></i>
+          <span>{{ this.quantity[i] }}</span>
+          <i class="fa fa-plus" aria-hidden="true" (click)="increment(i)"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
