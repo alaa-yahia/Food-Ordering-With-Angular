@@ -1,7 +1,7 @@
 {
   "name": "grocery-angular",
   "version": "0.0.0",
-  "homepage": "https://alaa-yahia.github.io/Food-Ordering-With-Angular",
+  "homepage": "https://alaa-yahia.github.io/Grocery-Basket",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
