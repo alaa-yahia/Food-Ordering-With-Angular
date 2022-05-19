@@ -1,7 +1,7 @@
 {
   "name": "tasty_meals",
   "version": "0.0.0",
-  "homepage": "https://alaa-yahia.github.io/Tasty_Meals",
+  "homepage": "https://alaa-yahia.github.io/Tasty_Meals/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
